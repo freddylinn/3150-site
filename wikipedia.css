@@ -29,19 +29,27 @@ img {
     margin-bottom: 1rem;
 }
 
-nav ul {
+#navbar {
     padding: 1rem 0;
     background: #016da2;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    list-style-type: none;
 
 }
 
-nav ul a {
+#section-list {
+    list-style: none;
+}
+
+#section-list li a{
+    font-size: 1.2rem;
+}
+
+.nav-links {
     color: white;
-    list-style-type: none;
     text-decoration: none;
 
 }
@@ -117,7 +125,7 @@ p {
 
 @media (min-width: 1024px) {
 
-    nav ul {
+    #navbar {
         justify-content: flex-start;
     }
 
