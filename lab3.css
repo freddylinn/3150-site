@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Marcellus&family=Merriweather:ital,wght@0,700;1,700&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: #fdf5d5;
+}
+
+h1 {
+    font-family: 'DM Serif Display', serif;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+}
+
+h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2rem;
+}
+
+h2, table {
+    margin-left: 2rem;
+}
+
+img {
+    width: 200px;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 8rem;
+    text-align: center;
+    padding: .25rem 0;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+fieldset {
+    padding: 1rem;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: .25rem 1rem;
+    margin-top: 1rem;
+}
+
+#navbar {
+    padding: 1rem 0;
+    background: #016da2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    list-style-type: none;
+
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+
+}
+
+#firstLink {
+    margin-left: 2rem;
+}
+
+.skip-link {
+    background: white;
+    color: black;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {  
+    transform: translateY(0%);
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 4rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin: 1.5rem 0;
+    font-size: 1.05rem;
+    line-height: 160%;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+@media (min-width: 1024px) {
+
+    #navbar {
+        justify-content: flex-start;
+    }
+
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables, Forms, and More</title>
+    <link rel="stylesheet" href="./lab3.css">
+</head>
+<h2 class="sr-only">Lab 3 Page</h2>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header id="top">
+        <nav>
+            <h2 class="sr-only">Navigation Bar</h2>
+            <ul id="navbar">
+                <li><a href="./index.html" id="firstLink" class="nav-links">Home</a></li>
+                <li><a href="./wikipedia.html" class="nav-links">Semantic Wiki</a></li>
+                <li><a href="./lab3.html" class="nav-links">Lab 3</a></li>
+                <li><a href="#" class="nav-links">link4</a></li>
+            </ul>
+        </nav>
+        <h1>PASTA</h1>
+    </header>
+    <main id="maincontent">
+        <section id="form">
+            <h2>What's your favorite pasta?</h2>
+            <div class="container">
+                <span aria-hidden="true" class="material-icons">restaurant dinner_dining</span>
+                <form>
+                    <fieldset>
+                        <legend>Enter your favorites for each category</legend>
+                        <label for="shape" class="label">Shape
+                            <input type="text" id="shape" required>
+                        </label>
+                        <label for="sauce" class="label">Sauce
+                            <input type="text" id="sauce" required>
+                        </label>
+                        <label for="cheese" class="label">Cheese Type
+                            <input type="text" id="cheese" required>
+                        </label>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <section id="table">
+            <h2>Types of Pasta</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Shapes</th>
+                        <th>Sauces</th>
+                        <th>Cheeses</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Spaghetti</td>
+                        <td>Marinara</td>
+                        <td>Parmesan</td>
+                    </tr>
+                    <tr>
+                        <td>Bowtie</td>
+                        <td>Alfredo</td>
+                        <td>Asiago</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
