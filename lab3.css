@@ -23,7 +23,7 @@ h2 {
     font-size: 2rem;
 }
 
-h2, table {
+h2, table, blockquote, details {
     margin-left: 2rem;
 }
 
