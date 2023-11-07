@@ -35,9 +35,10 @@ footer {
     padding: 2rem 0;
     background: #016da2;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 4rem;
     list-style-type: none;
 
 }
@@ -46,14 +47,8 @@ footer {
     color: white;
     text-decoration: none;
     background: #004262;
-    padding: 1rem;
+    padding: 1rem 4rem;
 }
-
-#firstLink {
-    margin-left: 2rem;
-}
-
-
 
 #mainContent {
     background: #dffae3;
@@ -89,6 +84,13 @@ section {
 
     #navbar {
         justify-content: flex-start;
+        flex-direction: row;
+        gap: 2rem;
+        padding: 1rem 0;
+    }
+
+    #firstLink {
+        margin-left: 2rem;
     }
 
     .nav-links {
