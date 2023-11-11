@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 @font-face {
     font-family: title;
     src: url(./CaviarDreams_Bold.ttf);
@@ -6,12 +9,16 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Verdana, sans-serif;
+    font-family: 'Open Sans', Verdana, sans-serif;
 }
 
 
 body {
     background: #f5f5f5;
+}
+
+nav {
+    margin-bottom: 1.5rem;
 }
 
 nav ul {
@@ -31,13 +38,13 @@ nav ul a {
 
 }
 
-#firstLink {
-    margin-left: 2rem;
+li {
+    list-style-type: none;
 }
 
 h1 {
     font-family: title;
-    margin: 1rem 0 2rem 1rem;
+    margin: 1rem;
     text-align: center;
 }
 
@@ -57,6 +64,8 @@ h2 {
 
 p {
     margin: .5rem 5%;
+    font-size: 1.05rem;
+    line-height: 150%;
 }
 
 img {
@@ -65,18 +74,45 @@ img {
     margin-bottom: 2rem;
 }
 
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+.skip-link {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {  
+    transform: translateY(0%);
+}
+
 @media (min-width: 1024px) {
 
     nav ul {
         justify-content: flex-start;
     }
 
-    h1 {
-        text-align: left;
-    }
-
     #aboutMe{
         margin: 0 12rem;
+    }
+
+    #firstLink {
+        margin-left: 2rem;
     }
 
 }

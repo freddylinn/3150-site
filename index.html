@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <a href="./index.html" id="firstLink">Home</a>
-            <a href="./wikipedia.html">Semantic Wiki</a>
-            <a href="./lab3.html">Lab 3</a>
-            <a href="./lab4.html">Lab 4</a>
-        </ul>
-    </nav>
-    <main>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header>
         <h1>Freddy Linn's Class Portal Page</h1>
+        <nav>
+            <h2 class="sr-only">Navigation Bar</h2>
+            <ul>
+                <li><a href="./index.html" id="firstLink">Home</a></li>
+                <li><a href="./wikipedia.html">Semantic Wiki</a></li>
+                <li><a href="./lab3.html">Lab 3</a></li>
+                <li><a href="./lab4.html">Lab 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="maincontent">
         <section id="aboutMe">
             <h2>About Me</h2>
             <p>Hi! I'm Freddy. I'm a junior in computer science at CU Boulder. I enjoy all kinds of programming,
@@ -25,6 +29,12 @@
                 part of a web development club here at CU called Blueprint Boulder so I hope to apply this knowledge 
                 towards all of our annual projects as well as the club website. Outside of classes, I enjoy climbing,
                 skiing, surfing, and anything else outdoors. 
+            </p>
+            <p>So far I've learned a lot more about accessible web design. This includes labeling sections, using
+                semantic HTML for the correct purposes, and more. This has helped me learn fundamental concepts that I can
+                apply in all future projects. It has also given me the opportunity to tell teammates and organizations about these
+                best practices in hopes of making the web more accessible. HTML5 is a powerful tool that can make navigating websites
+                much easier for all users.
             </p>
             <img src="./img/portrait.png" alt="Photograph of me smiling in front of a forest">
         </section>
