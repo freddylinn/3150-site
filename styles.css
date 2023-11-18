@@ -25,6 +25,7 @@ nav ul {
     padding: 1rem 0;
     background: #016da2;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
@@ -35,17 +36,36 @@ nav ul a {
     color: white;
     list-style-type: none;
     text-decoration: none;
-
 }
 
 li {
     list-style-type: none;
+    padding: 1rem 3rem;
+    background: #20263a;
 }
 
 h1 {
     font-family: title;
     margin: 1rem;
     text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns:
+    1fr;
+    grid-template-areas:
+   "heady"
+   "mainy"
+    ;
+}
+
+header {
+    grid-area: heady;
+}
+
+main {
+    grid-area: mainy;
 }
 
 #aboutMe {
@@ -105,6 +125,7 @@ img {
 
     nav ul {
         justify-content: flex-start;
+        flex-direction: row;
     }
 
     #aboutMe{
@@ -113,6 +134,11 @@ img {
 
     #firstLink {
         margin-left: 2rem;
+    }
+
+    li {
+        padding: 0;
+        background: #016da2;
     }
 
 }
