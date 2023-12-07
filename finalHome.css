@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+
+body {
+    background: #DBF0D1;
+}
+
+nav {
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    padding: 1rem 0;
+    background: #3A6B24;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+nav ul a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem 3rem;
+    background: #20263a;
+}
+
+h1 {
+    font-family: serif;
+    margin: 1rem;
+    text-align: center;
+}
+
+#maincontent {
+    text-align: center;
+}
+
+h2 {
+    font-family: serif;
+}
+
+h2, section {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    width: 90%;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+.skip-link {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {  
+    transform: translateY(0%);
+}
+
+@media (min-width: 1024px) {
+
+    nav ul {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    #aboutMe{
+        margin: 0 12rem;
+    }
+
+    #firstLink {
+        margin-left: 2rem;
+    }
+
+    li {
+        padding: 0;
+        background: #3A6B24;
+    }
+
+    #maincontent {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+}
