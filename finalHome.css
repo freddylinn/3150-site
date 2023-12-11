@@ -71,6 +71,12 @@ p {
     display: block;
 }
 
+img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
 #chart {
     width: 400px;
     height: auto;
