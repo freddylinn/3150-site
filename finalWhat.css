@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+
+body {
+    background: #f8eafb;
+}
+
+nav {
+    margin-bottom: 1.5rem;
+}
+
+nav ul {
+    padding: 1rem 0;
+    background: #6a5284;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+}
+
+nav ul a {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+table {
+    margin: 2rem auto;
+    width: 90%;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    text-align: center;
+    padding: 1rem .25rem;
+}
+
+th {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem 3rem;
+    background: #20263a;
+}
+
+h1 {
+    font-family: serif;
+    margin: 1rem;
+    text-align: center;
+}
+
+#maincontent {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    text-align: left;
+}
+
+h2 {
+    font-family: serif;
+}
+
+h2, section {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    width: 90%;
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+}
+
+.skip-link {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {  
+    transform: translateY(0%);
+}
+
+@media (min-width: 1024px) {
+
+    nav ul {
+        justify-content: flex-start;
+        flex-direction: row;
+    }
+
+    table {
+        width: 50%;
+    }
+
+    #aboutMe{
+        margin: 0 12rem;
+    }
+
+    #firstLink {
+        margin-left: 2rem;
+    }
+
+    li {
+        padding: 0;
+        background: #6a5284;
+    }
+
+    #maincontent {
+        text-align: left;
+        margin-left: 2rem;
+    }
+
+}

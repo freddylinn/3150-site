@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Design</title>
+    <link rel="stylesheet" href="./finalHow.css">
+</head>
+<body>
+    <a class="skip-link" href="#maincontent">Skip to main content</a>
+    <header>
+        <h1>The Importance of Universal Design</h1>
+        <nav>
+            <h2 class="sr-only">Navigation Bar</h2>
+            <ul>
+                <li><a href="./finalHome.html" id="firstLink">Why?</a></li>
+                <li><a href="./finalWhat.html">What?</a></li>
+                <li><a href="./finalHow.html">How?</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main id="maincontent">
+        <h2>How Do We Achieve Universal Design on the Web?</h2>
+        <section>
+            <h3>HTML5 and CSS</h3>
+            <p> <abbr title="Hyper Text Markup Language 5">HTML5</abbr> and <abbr title="Cascading Style Sheets">CSS</abbr> are core web technologies that come with a diverse set of tools to achieve universal design.
+                The introduction of HTML5 in 2008 revolutionized semantic HTML. MDN Web Docs explains semantic HTML via an h1 tag: 
+                "In HTML, for example, the h1 element is a semantic element, which gives the text it wraps around the role (or meaning)
+                 of 'a top level heading on your page." HTML defines the content itself. An important idea to keep in mind with HTML5 is to be as specific as possible when structuring
+                 content. A common pitfall is that developers only use the div or span tags for content, but these have no semantic value.
+                 Developers can use the section tag to define sections, h2 or h3 tags to define section headers, p tags to define paragraphs, and so much more.
+                 A comprehensive list can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">here</a>. Proper semantic tags help screen
+                 readers understand a website and navigate it accordingly. An example is below.
+            </p>
+            <div id="group">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.svg.png" alt="CSS Logo">
+            </div>
+            <code>
+                &lt;header&gt;
+                    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                &lt;/header&gt;
+            </code>
+            <!-- <code></code> -->
+            <p>CSS handles the styling of content and is crucial for universal design. CSS can make websites mobile-first and responsive, meaning you can define
+                styles for mobile devices initially and then use media queries to define styles for desktop devices. This allows for different styling depending on
+                screen size so that designers can provide smooth experiences regardless of device. Designers can also take advantage of 
+                CSS Grid and Flexbox to perfect their layouts. Color and font controls are imperative for providing proper contrast and sizing so that users with vision impairments
+                like colorblindness or blurry vision can clearly see the content. The "em" and "rem" units size text according to a user's font preferences. You can also
+                set certain items to only be read by screen readers, or to be ignored by screen readers.
+            </p>
+        </section>
+        <section>
+            <h3>Validation Tools</h3>
+            <p> Validation tools can help spot errors in code that would go against best practices in accessibility. They can test the HTML itself,
+                color contrast, semantics, and more. Certain validation tools will even give advice on how to improve the accessibility of your site on top
+                of pointing out errors. These include: W3C HTML Validator, Google Lighthouse (comprehensive), WAVE (contrast and structuring errors), and more.
+            </p>
+            <!-- <img src="#" alt=""> -->
+        </section>
+    </main>
+</body>
+</html>
