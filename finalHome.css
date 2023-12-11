@@ -130,6 +130,18 @@ cite {
         flex-direction: row;
     }
 
+    #chart {
+        width: 400px;
+        height: auto;
+        margin-bottom: 3rem;
+    }
+    
+    #phones {
+        width: 250px;
+        display: inline-block;
+        height: auto;
+    }
+
     p {
         width: 80%;
         display: inline-block;
