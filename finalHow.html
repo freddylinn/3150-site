@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal Design</title>
     <link rel="stylesheet" href="./finalHow.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
     <a class="skip-link" href="#maincontent">Skip to main content</a>
@@ -30,17 +31,36 @@
                  content. A common pitfall is that developers only use the div or span tags for content, but these have no semantic value.
                  Developers can use the section tag to define sections, h2 or h3 tags to define section headers, p tags to define paragraphs, and so much more.
                  A comprehensive list can be found <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">here</a>. Proper semantic tags help screen
-                 readers understand a website and navigate it accordingly. An example is below.
+                 readers understand a website and navigate it accordingly. Example code is below, first showing proper semantics and then vague html.
             </p>
+ 
+<pre>
+<i class="material-icons" id="check">check</i>
+<code>
+    &lt;header&gt;
+      &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;/header&gt;
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Section Title&lt;/h2&gt;
+        &lt;p&gt;Some Paragraph Text&lt;/p&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+</code>
+
+<i class="material-icons" id="x">close</i>
+<code>
+    &lt;div&gt;Welcome!&lt;/div&gt;
+    &lt;div&gt;Subheader&lt;/div&gt;
+    &lt;div&gt;Paragraph of text&lt;/div&gt;
+</code>
+
+</pre>
+
             <div id="group">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/768px-HTML5_logo_and_wordmark.svg.png" alt="HTML5 Logo">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/CSS.3.svg/730px-CSS.3.svg.png" alt="CSS Logo">
             </div>
-            <code>
-                &lt;header&gt;
-                    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
-                &lt;/header&gt;
-            </code>
             <!-- <code></code> -->
             <p>CSS handles the styling of content and is crucial for universal design. CSS can make websites mobile-first and responsive, meaning you can define
                 styles for mobile devices initially and then use media queries to define styles for desktop devices. This allows for different styling depending on
@@ -56,7 +76,43 @@
                 color contrast, semantics, and more. Certain validation tools will even give advice on how to improve the accessibility of your site on top
                 of pointing out errors. These include: W3C HTML Validator, Google Lighthouse (comprehensive), WAVE (contrast and structuring errors), and more.
             </p>
-            <!-- <img src="#" alt=""> -->
+        </section>
+        <section>
+            <h3>Helpful Features</h3>
+            <p>On top of proper structuring, you can incorporate some helpful tricks with HTML and CSS or with any digital media you produce. "Skip navigation" buttons can make the experience
+                much smoother for users with screen readers so that they don't have to hear the navigation every time they change pages. It is fairly easy to implement in HTML and CSS and an example implementation
+                is shown below, assuming you have a main HTML tag with the id "maincontent". The first code block is the HTML, which can be put at the top of your body above the header, and the second code block is the css
+                which can be implemented in your CSS stylesheet file.
+            </p>
+<pre>
+<h4>HTML</h4>
+<code>
+&lt;a class="skip-link" href="#maincontent"&gt;Skip&lt;/a&gt;
+</code>
+
+
+<h4>CSS</h4>
+<code>
+.skip-link {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: .25rem;
+    position: absolute;
+    transform: translateY(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {  
+    transform: translateY(0%);
+}
+</code>
+</pre>
+
+        <p>As mentioned earlier, it's always important to ensure that a video you produce has captions for users with hearing impairments. Adobe has numerous color picking tools
+            that will allow you to pick high-contrast color schemes along with options that are suitable for users with colorblindness. Small design changes that are easy to implement
+            can make a huge difference for certain users, and benefit everyone even if it's just a slight effect. This will compound over time and produce a high-quality product.
+        </p>
         </section>
     </main>
 </body>
