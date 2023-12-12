@@ -8,37 +8,57 @@
 </head>
 <body>
     <a class="skip-link" href="#maincontent">Skip to main content</a>
-    <header>
-        <h1>Freddy Linn's Class Portal Page</h1>
-        <nav>
-            <h2 class="sr-only">Navigation Bar</h2>
-            <ul>
-                <li><a href="./index.html" id="firstLink">Home</a></li>
-                <li><a href="./wikipedia.html">Semantic Wiki</a></li>
-                <li><a href="./lab3.html">Lab 3</a></li>
-                <li><a href="./lab4.html">Lab 4</a></li>
-                <li><a href="./finalHome.html">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main id="maincontent">
-        <section id="aboutMe">
-            <h2>About Me</h2>
-            <p>Hi! I'm Freddy. I'm a junior in computer science at CU Boulder. I enjoy all kinds of programming,
-                but have mainly focused on web development. This makes me excited to learn universal design so that
-                I can make my websites more accessible and a better experience for everyone that uses them. I am also
-                part of a web development club here at CU called Blueprint Boulder so I hope to apply this knowledge 
-                towards all of our annual projects as well as the club website. Outside of classes, I enjoy climbing,
-                skiing, surfing, and anything else outdoors. 
-            </p>
-            <p>So far I've learned a lot more about accessible web design. This includes labeling sections, using
-                semantic HTML for the correct purposes, and more. This has helped me learn fundamental concepts that I can
-                apply in all future projects. It has also given me the opportunity to tell teammates and organizations about these
-                best practices in hopes of making the web more accessible. HTML5 is a powerful tool that can make navigating websites
-                much easier for all users.
-            </p>
-            <img src="./img/portrait.png" alt="Photograph of me smiling in front of a forest">
-        </section>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Freddy Linn's Class Portal Page</h1>
+            <nav>
+                <h2 class="sr-only">Navigation Bar</h2>
+                <ul>
+                    <li><a href="./index.html" id="firstLink">Home</a></li>
+                    <li><a href="./wikipedia.html">Semantic Wiki</a></li>
+                    <li><a href="./lab3.html">Lab 3</a></li>
+                    <li><a href="./lab4.html">Lab 4</a></li>
+                    <li><a href="./finalHome.html">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="maincontent">
+            <section id="aboutMe">
+                <h2>About Me</h2>
+                <p>Hi! I'm Freddy. I'm a junior in computer science at CU Boulder. I enjoy all kinds of programming,
+                    but have mainly focused on web development. This makes me excited to learn universal design so that
+                    I can make my websites more accessible and a better experience for everyone that uses them. I am also
+                    part of a web development club here at CU called Blueprint Boulder so I hope to apply this knowledge
+                    towards all of our annual projects as well as the club website. Outside of classes, I enjoy climbing,
+                    skiing, surfing, and anything else outdoors.
+                </p>
+                <p>So far I've learned a lot more about accessible web design. This includes labeling sections, using
+                    semantic HTML for the correct purposes, and more. This has helped me learn fundamental concepts that I can
+                    apply in all future projects. It has also given me the opportunity to tell teammates and organizations about these
+                    best practices in hopes of making the web more accessible. HTML5 is a powerful tool that can make navigating websites
+                    much easier for all users.
+                </p>
+                <img src="./img/portrait.png" alt="Photograph of me smiling in front of a forest" class="portrait">
+            </section>
+        </main>
+        <aside>
+            <section id="project">
+                <h2>My Favorite Projects</h2>
+                <p>One of my favorite projects at CU Boulder was in my Intro to Cybersecurity class. For this project, we were tasked with
+                    testing student sites from the intro to web development course for vulnerabilities. This gave me the opportunity to apply the
+                    skills I'd learned in a controlled environment and brainstorm how any vulnerabilities could be patched. It felt like a learning
+                    experience for both myself and the students whose website I tested, so I liked how it was mutually beneficial. It also felt close
+                    to a real world penetration testing scenario.
+                </p>
+                <figure>
+                    <img src="./img/clifford.png" alt="Screenshot from the project with clifford the dog">
+                    <figcaption>An example of <abbr title="Cross Site Scripting">XSS</abbr> which allowed me to input an h1 tag as a pet's name</figcaption>
+                </figure>
+                <p>One of my favorite projects in my universal design course was the semantic wiki. It taught me a lot about how to properly structure a page.
+                    The link is in the navbar or can be found by <a href="./wikipedia.html">clicking this link</a>
+                </p>
+            </section>
+        </aside>
+    </div>
 </body>
 </html>
